@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restourant</title>
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    ">
+    <!-- tailwind css link-->
+    <link rel="stylesheet" href="../public/output.css">
+</head>
+<body>
+    <!--nav starts here-->
+    <nav class="relative w-full flex flex-wrap items-center justify-between py-3 px-16 bg-red-900">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+          <div class="container-fluid">
+            <a class="text-4xl text-white font-semibold" href="#">Indieat</a>
+            </div>
+          <div class=" absolute right-0 flex items-center flext-shrink-0 px-16">
+            <div class="mr-4 text-white">
+                <a href="#">login</a>
+            </div>
+            <div  class="mr-4 text-white">
+                <i class="fa-solid fa-grip-lines-vertical"></i>
+            </div>
+            <div  class="mr-4 text-2xl text-white relative">
+                <button type="menu">
+                    <div>
+                        <i class="fa-solid fa-bag-shopping"></i> 
+                    </div>
+                   <div>
+                       <span class="bg-yellow-400 text-gray-800 border border-none rounded-full text-xs px-1 absolute bottom-0 right-0">0</span>
+                   </div>
+                </button>
+            </div>
+        </div>
+    </div>
+  </nav>
+            <!--nav ends here-->
+
+            <!-- main section starts here-->
+
+
+<main>
+                <!-- Banner starts here-->
+    <div class="  mt-16 mx-16 lg:grid lg:grid-cols-3  gap-6">
+        <div class="bg-white col-span-2 text-center container flex flex-col justify-center md:items-start ">
+            <div class=" mb-8">
+                 <h1 class="text-5xl font-bold">Indian Cultural Food</h1>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center border-none md:border border-2 border-gray-300 md:shadow-md gap-3 my-6 ">
+                <div class="px-3 bg-white h-12 flex items-center justify-center w-full border-2 md:border-none shadow-md md:shadow-none ">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div class=" relative flex-grow">
+                        <select name="location" id="location-select" class="w-full h-full px-3 md:w-48 focus:outline-none appearance-none ">
+                            <option selected>Dhaka</option>
+                            <option value="1">Rajshahi</option>
+                            <option value="1">Chittagonog</option>
+                            <option value="1">Shylet</option>
+                            <option value="1">Rangpur</option>
+                        </select>
+                    </div>
+                        <span><i class="fa-solid fa-caret-down"></i></span>
+               </div>
+                 <div class="hidden md:block px-3 py-3   bg-gray-100    ">
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                </div>
+                <div class=" px-3 bg-white h-12 flex items-center justify-center w-full border md:border-none shadow-md md:shadow-none  ">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" placeholder="Search For Restourants" class="w-full h-full px-3 md:w-72 focus:outline-none appearance-none">
+                
+                </div>
+            </div>
+            <button class=" flex justify-start gap-3 w-max p-3 border-2 shadow-md">
+                <div><i class="fa-solid fa-location-crosshairs"></i> </div>
+                    <div>
+                        <h2 class=" font-semibold text-gray-800">Detect current Location</h2>
+                        <p class="font-normal text-gray-600">Using GPS</p>
+                    </div>
+            </button>
+        </div>
+        <div class=" hidden lg:flex justify-center p-2 static col-span-1 opacity-100">
+                       
+            <img src="./image/front-pic.jpg" alt="image" class="w-full">
+
+        </div>
+    </div>
+    <!--Banner ends here-->
+
+
+    <!-- Cards starts here-->
+
+    <div class=" mx-10 bg-white grid md:grid-cols-3 lg:grid-cols-4 px-10 mt-20 gap-5 h-max mb-28 ">
+        
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+
+        <div class=" relative bg-white p-8  border lg:h-80 my-6 shadow-md hover:scale-105 transition-transform">
+            <div>
+                <img src="./image/istockphoto-1206323282-612x612.jpg" alt="Image">
+            </div>
+            <div class="font-semibold text-gray-800 text-lg mb-2  ">
+                <h2>Itaque molestiae amet.</h2>
+            </div>
+            <div class=" flex items-center justify-between mb-2">
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast Food</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-star text-orange-500"></i>
+                    <span>5/5</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-0 left-0">New</span>
+            </div>
+            <div>
+                <span class="text-white font-normal text-base absolute px-3 py-1 bg-rose-600 top-10 left-0">Free Delevary</span>
+            </div>
+            <div>
+                <span class="text-white font-normal border-0 rounded-b-full text-base absolute px-3 py-1 bg-rose-600 top-0 right-5">25 <br>Min</span>
+            </div>
+        </div>
+        <p class="font-regular text-3xl mt-20 mb-20">Closed For Now..</p>
+
+    </div>
+    <!--cards ends here-->
+                
+
+</main>
+<!-- maint section ends here-->
+
+
+
+<!-- footer starts here-->
+<footer class=" border-t-2 border-gray-600 mt-20 px-8 ">
+    <div class=" mt-20 px-28">
+        <div class=" flex  items-center justify-between mb-10">
+            <div class="font-semibold text-4xl text-gray-700">
+                <a href="#"> Indieat</a>
+            </div>
+            <div>
+                <div>
+                    <a href="#"> <i class="fa-brands fa-instagram-square text-4xl"></i></a>
+                    <a href="#"> <i class="fa-brands fa-facebook text-4xl"></i></a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="border-b border-black">
+            
+        </div>
+    </div>
+    <div class="mt-10 bg-white px-28 grid grid-cols-2 py-3 pb-6 ">
+        <div class="self-center">
+            <span>© 2021 Copyright wasim akram</span>
+        </div>
+        <div class="flex flex-wrap gap-3 justify-end text-right">
+            
+                <a href="#">Terms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">About us</a> 
+                <a href="#">Help Center</a>
+                <a href="#"> Press & Media</a>
+                <a href="#"> For partners</a></li>
+                <a href="#">Partner Agreements</a></li>
+   
+        </div>
+        
+    </div>
+</footer>
+            
+      
+</body>
+</html>
