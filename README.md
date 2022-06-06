@@ -1,2 +1,2 @@
 # Restourant-website
-## Its a full responsive website 
+## It's a full responsive website 
